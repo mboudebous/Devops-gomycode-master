@@ -34,6 +34,11 @@ pipeline {
 				sh "mvn package -DskipTests=true"
 			}
 		}
+	    stage ("Lancement des Tests Unitaires"){
+		steps{
+			sh "mvn test"
+				}
+		}
         	
     }
 }
