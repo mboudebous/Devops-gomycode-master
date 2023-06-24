@@ -31,7 +31,7 @@ pipeline {
 	
 	stage ("Creation du livrable"){
 			steps{
-				bat "mvn package -DskipTests=true"
+				sh "mvn package -DskipTests=true"
 			}
 		}
         	
